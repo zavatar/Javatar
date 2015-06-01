@@ -53,7 +53,7 @@ public class AppTests {
 	public void testGreeting() throws Exception {
 		@SuppressWarnings("rawtypes")
 		ResponseEntity<Map> entity = new TestRestTemplate().getForEntity(
-				"http://localhost:" + this.port + "/hello-world", Map.class);
+				"http://localhost:" + this.port + "/greeting1", Map.class);
 		assertEquals(HttpStatus.OK, entity.getStatusCode());
 	}
 
