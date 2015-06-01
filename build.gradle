@@ -1,6 +1,14 @@
-apply plugin: 'java'
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.3.RELEASE")
+    }
+}
 
-sourceCompatibility = 1.5
+apply plugin: 'java'
+apply plugin: 'spring-boot'
 
 jar {
     baseName = 'Javatar'
@@ -13,6 +21,9 @@ repositories {
 
 dependencies {
     compile "org.projectlombok:lombok:1.14.2"
+    compile "org.springframework.boot:spring-boot-starter-web"
+    compile "org.springframework.boot:spring-boot-starter-actuator"
+    testCompile "org.springframework.boot:spring-boot-starter-test"
     testCompile group: 'junit', name: 'junit', version: '4.+'
 }
 
