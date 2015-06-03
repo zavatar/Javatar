@@ -5,3 +5,5 @@ Javatar.iml
 
 # Gradle
 .gradle
+
+logs
