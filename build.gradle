@@ -1,7 +1,5 @@
 apply plugin: 'java'
 
-sourceCompatibility = 1.5
-
 jar {
     baseName = 'Javatar'
     version =  '0.1.0'
