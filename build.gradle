@@ -3,12 +3,13 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath('org.springframework.boot:spring-boot-gradle-plugin:1.2.3.RELEASE')
+        classpath('org.springframework.boot:spring-boot-gradle-plugin:1.5.2.RELEASE')
     }
 }
 
 apply plugin: 'java'
-apply plugin: 'spring-boot'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
 
 jar {
     baseName = 'Javatar'
@@ -20,7 +21,7 @@ repositories {
 }
 
 dependencies {
-    compile 'org.projectlombok:lombok:1.14.2'
+    compile 'org.projectlombok:lombok:1.16.16'
     compile 'org.springframework.boot:spring-boot-starter-web'
     compile 'org.springframework.boot:spring-boot-starter-actuator'
     compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
@@ -29,9 +30,5 @@ dependencies {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '2.4'
-}
-
-tasks.withType(JavaCompile) {
-    options.encoding = 'UTF-8'
+    gradleVersion = '3.4.1'
 }

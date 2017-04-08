@@ -14,8 +14,10 @@ Otherwise:
 
 you can also import the project to IntelliJ IDEA
 
+- gradle idea
+
 Dependencies
 ------------
 
-- lombok 1.14.2
+- lombok 1.16.16
 - junit 4.+

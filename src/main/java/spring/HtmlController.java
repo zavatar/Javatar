@@ -7,7 +7,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * HtmlController
- * Created by Meng on 2015/6/1.
+ *
+ * @author zhumeng
+ * @since 2015/6/1
  */
 @Controller
 public class HtmlController {

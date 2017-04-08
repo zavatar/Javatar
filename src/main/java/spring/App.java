@@ -7,16 +7,18 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
  * App
- * Created by Meng on 2015/6/1.
+ *
+ * @author zhumeng
+ * @since 2015/6/1
  */
 @Slf4j
 @SpringBootApplication
 @EnableScheduling
 public class App {
 
-	public static void main(String[] args) {
-		log.info("SpringApplication Start Running ...");
-		SpringApplication.run(App.class, args);
-	}
+    public static void main(String[] args) {
+        log.info("SpringApplication Start Running ...");
+        SpringApplication.run(App.class, args);
+    }
 
 }
